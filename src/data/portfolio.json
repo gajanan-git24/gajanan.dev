@@ -1,0 +1,114 @@
+{
+    "profile": {
+        "name": "Gajanan",
+        "title": "Senior Full-Stack Engineer",
+        "bio": "I craft robust, high-performance web applications with a focus on modern user experiences and scalable architectures. With expertise in Next.js, TypeScript, and modern ecosystem tools, I deliver production-ready software designed to excel.",
+        "email": "gajananhampiholi@gmail.com",
+        "github": "https://github.com/gajanan-git24",
+        "linkedin": "https://in.linkedin.com/in/gajanan-hampiholi-053ba7294",
+        "location": "Remote"
+    },
+    "projects": [
+        {
+            "id": "1",
+            "title": "SentinelIQ Insider Threat Platform",
+            "description": "An AI-driven behavioral analytics platform detecting privileged access misuse and insider threats. Integrates LSTM-based UEBA, GNN collusion mapping, SHAP-based explainable AI, and Post-Quantum Cryptography simulations.",
+            "techStack": [
+                "Next.js",
+                "TypeScript",
+                "Python",
+                "TensorFlow",
+                "Tailwind CSS"
+            ],
+            "liveLink": "https://sentineliq.gajanan.dev",
+            "githubLink": "https://github.com/gajanan-git24/sentineliq",
+            "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "2",
+            "title": "TrustStream Decentralized Layer",
+            "description": "Architectural scaffold for a decentralized data integrity layer, featuring a Java-based blockchain orchestrator, Python data engine, Solidity smart contracts, and a Next.js monitoring dashboard.",
+            "techStack": [
+                "Next.js",
+                "Java",
+                "Python",
+                "Solidity",
+                "Tailwind CSS"
+            ],
+            "liveLink": "https://truststream.gajanan.dev",
+            "githubLink": "https://github.com/gajanan-git24/truststream",
+            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "3",
+            "title": "Proton Anomaly Dashboard",
+            "description": "A premium, glassmorphism-styled web dashboard enabling real-time interaction with a privacy-preserving behavioral anomaly detection API, complete with sequential history visualization.",
+            "techStack": [
+                "React",
+                "TypeScript",
+                "Vite",
+                "Framer Motion",
+                "FastAPI"
+            ],
+            "liveLink": "https://proton.gajanan.dev",
+            "githubLink": "https://github.com/gajanan-git24/proton-dashboard",
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        }
+    ],
+    "resume": {
+        "timeline": [
+            {
+                "id": "exp1",
+                "role": "Senior Full-Stack Engineer",
+                "company": "Google Antigravity Ecosystem",
+                "period": "2024 – Present",
+                "description": "Leading the architecture and implementation of scalable, high-fidelity agentic tools. Spearheaded multiple high-impact projects including SentinelIQ and TrustStream, collaborating with cross-functional teams to ship production-ready systems."
+            },
+            {
+                "id": "exp2",
+                "role": "Full-Stack Engineer",
+                "company": "NextGen Web Solutions",
+                "period": "2021 – 2024",
+                "description": "Architected end-to-end web architectures, optimized CI/CD pipelines, and led a team of 4 engineers transitioning monolithic setups into headless microservices using Next.js and Prisma."
+            }
+        ],
+        "skills": {
+            "frontend": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion",
+                "Redux"
+            ],
+            "backend": [
+                "Node.js",
+                "Express",
+                "Python",
+                "FastAPI",
+                "GraphQL"
+            ],
+            "database": [
+                "PostgreSQL",
+                "MongoDB",
+                "Prisma",
+                "SQLite",
+                "Redis"
+            ],
+            "devops": [
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "Vercel",
+                "GitHub Actions"
+            ]
+        },
+        "education": [
+            {
+                "degree": "B.S. in Computer Science",
+                "institution": "Tech University",
+                "period": "2017 – 2021"
+            }
+        ]
+    }
+}
