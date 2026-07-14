@@ -1,122 +1,119 @@
 {
     "profile": {
-        "name": "Gajanan",
-        "title": "Senior Full-Stack Engineer",
-        "bio": "Senior Full-Stack Engineer specializing in scalable web architectures and modern user experiences. I excel at leading teams through complex technical transitions and delivering high-performance, production-ready software using Next.js and TypeScript.",
-        "email": "gajananhampiholi@gmail.com",
+        "name": "Gajanan B Hampiholi",
+        "title": "Full-Stack Developer & CS Student",
+        "bio": "Computer Science & Business Systems engineering student with hands-on internship experience in Python full-stack development. Passionate about building practical web solutions and eager to contribute to impactful real-world projects.",
+        "email": "gajananhampiholi24@gmail.com",
         "github": "https://github.com/gajanan-git24",
         "linkedin": "https://in.linkedin.com/in/gajanan-hampiholi-053ba7294",
-        "location": "Remote"
+        "location": "Dandeli, Karnataka"
     },
     "projects": [
         {
             "id": "1",
+            "title": "AI-Powered Face Recognition Security",
+            "description": "An intelligent security system leveraging OpenCV facial recognition for automated real-time Telegram security alerts, improving overall security efficiency by 20%.",
+            "techStack": [
+                "Python",
+                "OpenCV",
+                "Telegram API",
+                "FastAPI"
+            ],
+            "liveLink": "",
+            "githubLink": "https://github.com/gajanan-git24",
+            "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "2",
             "title": "SentinelIQ Insider Threat Platform",
-            "description": "An AI-driven behavioral analytics platform detecting privileged access misuse and insider threats. Integrates LSTM-based UEBA, GNN collusion mapping, SHAP-based explainable AI, and Post-Quantum Cryptography simulations.",
+            "description": "An AI-driven behavioral analytics platform detecting privileged access misuse and insider threats, integrating advanced ML techniques and security frameworks.",
             "techStack": [
                 "Next.js",
                 "TypeScript",
                 "Python",
                 "TensorFlow",
-                "Tailwind CSS"
-            ],
-            "liveLink": "https://sentineliq.gajanan.dev",
-            "githubLink": "https://github.com/gajanan-git24/sentineliq",
-            "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": "2",
-            "title": "TrustStream Decentralized Layer",
-            "description": "Architectural scaffold for a decentralized data integrity layer, featuring a Java-based blockchain orchestrator, Python data engine, Solidity smart contracts, and a Next.js monitoring dashboard.",
-            "techStack": [
-                "Next.js",
-                "Java",
-                "Python",
-                "Solidity",
-                "Tailwind CSS"
-            ],
-            "liveLink": "https://truststream.gajanan.dev",
-            "githubLink": "https://github.com/gajanan-git24/truststream",
-            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            "id": "3",
-            "title": "Proton Anomaly Dashboard",
-            "description": "A premium, glassmorphism-styled web dashboard enabling real-time interaction with a privacy-preserving behavioral anomaly detection API, complete with sequential history visualization.",
-            "techStack": [
-                "React",
-                "TypeScript",
-                "Vite",
-                "Framer Motion",
                 "FastAPI"
             ],
-            "liveLink": "https://proton.gajanan.dev",
-            "githubLink": "https://github.com/gajanan-git24/proton-dashboard",
-            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            "liveLink": "",
+            "githubLink": "https://github.com/gajanan-git24",
+            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         }
     ],
     "resume": {
         "timeline": [
             {
                 "id": "exp1",
-                "role": "Senior Full-Stack Engineer",
-                "company": "Google Antigravity Ecosystem",
-                "period": "2024 – Present",
+                "role": "Python Full-Stack Developer Intern",
+                "company": "Edu Skills",
+                "period": "Mar 2026 – Present",
                 "achievements": [
-                    "Leading the architecture and implementation of scalable, high-fidelity agentic tools within advanced AI contexts.",
-                    "Spearheaded multiple high-impact projects including SentinelIQ and TrustStream from concept to production.",
-                    "Collaborated with cross-functional engineers to deploy robust, production-ready systems."
+                    "Developing full-stack web applications using the FastAPI framework in a professional team environment.",
+                    "Integrated Python libraries Starlette and Pydantic to build robust, production-quality back-end services.",
+                    "Contributed to end-to-end project deliverables, gaining practical experience in real-world software development workflows."
                 ]
             },
             {
                 "id": "exp2",
-                "role": "Full-Stack Engineer",
-                "company": "NextGen Web Solutions",
-                "period": "2021 – 2024",
+                "role": "AI Security Project Lead",
+                "company": "Academic Project — VTU",
+                "period": "Oct 2024 – Dec 2025",
                 "achievements": [
-                    "Architected modern end-to-end web architectures and optimized CI/CD pipelines for optimal deployment velocity.",
-                    "Mentored a team of 4 engineers while transitioning monolithic legacy setups into modern headless microservices.",
-                    "Delivered high-performance dynamic user experiences using Next.js, TypeScript, and Prisma."
+                    "Designed and built an AI-powered face recognition security system using OpenCV for automated real-time alerts.",
+                    "Integrated Telegram Bot API to deliver instant security notifications upon unauthorized access detection.",
+                    "Improved overall security efficiency by 20% through optimized facial recognition pipelines."
                 ]
             }
         ],
         "skills": {
             "frontend": [
-                "React",
-                "Next.js",
-                "TypeScript",
-                "Tailwind CSS",
-                "Framer Motion",
-                "Redux"
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
             ],
             "backend": [
-                "Node.js",
-                "Express",
                 "Python",
                 "FastAPI",
-                "GraphQL"
+                "Starlette",
+                "Pydantic",
+                "C",
+                "C++"
             ],
             "database": [
-                "PostgreSQL",
-                "MongoDB",
-                "Prisma",
-                "SQLite",
-                "Redis"
+                "MySQL"
             ],
             "devops": [
+                "Git",
                 "Docker",
-                "Kubernetes",
-                "AWS",
-                "Vercel",
-                "GitHub Actions"
+                "VS Code",
+                "GitHub"
             ]
         },
         "education": [
             {
-                "degree": "B.S. in Computer Science",
-                "institution": "Tech University",
-                "period": "2017 – 2021"
+                "degree": "B.E. in Computer Science & Business Systems",
+                "institution": "Srinivas Institute of Technology, Mangalore (VTU)",
+                "period": "2023 – 2027",
+                "detail": "CGPA: 8.0 / 10"
             }
+        ],
+        "certifications": [
+            {
+                "title": "Zscaler Zero Trust Cloud Security",
+                "issuer": "Edu Skills",
+                "year": "2024"
+            },
+            {
+                "title": "Cisco Certified Technician – Networking",
+                "issuer": "Cisco",
+                "year": "2025"
+            }
+        ],
+        "achievements": [
+            "Earned recognition for Best Out of Waste competition [2021]",
+            "Secured 3rd Prize in Esports Tournament [2022]",
+            "Member of NEXUS CLUB SIT [2025]",
+            "Volunteered for Hack Matrix Coding Marathon"
         ]
     }
 }

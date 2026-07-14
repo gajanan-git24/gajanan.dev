@@ -7,7 +7,7 @@ const categoryLabel: Record<string, string> = {
     frontend: "Frontend",
     backend: "Backend",
     database: "Database",
-    devops: "DevOps & Cloud",
+    devops: "DevOps & Tools",
 };
 
 interface ResumeContentProps {
@@ -23,8 +23,15 @@ interface ResumeContentProps {
             degree: string;
             institution: string;
             period: string;
+            detail?: string;
         }>;
         skills: Record<string, string[]>;
+        certifications: Array<{
+            title: string;
+            issuer: string;
+            year: string;
+        }>;
+        achievements: string[];
     }
 }
 
@@ -68,7 +75,7 @@ export default function ResumeContent({ resume }: ResumeContentProps) {
             </motion.header>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-start relative z-10">
-                {/* ── Left (8/12): Experience + Education ──────────── */}
+                {/* ── Left (8/12): Experience + Education + Certifications ── */}
                 <div className="lg:col-span-8 flex flex-col gap-24">
 
                     {/* Experience */}
@@ -80,12 +87,12 @@ export default function ResumeContent({ resume }: ResumeContentProps) {
                             <h2 id="experience-heading" className="text-3xl font-extrabold tracking-tight">Experience</h2>
                         </div>
 
-                        <div className="relative md:pl-0">
+                        <div className="relative">
                             {/* Glowing Timeline Line */}
-                            <div className="absolute left-[88px] md:left-[178px] top-6 bottom-6 w-px bg-gradient-to-b from-primary/60 via-primary/20 to-transparent hidden md:block" />
+                            <div className="absolute left-[178px] top-6 bottom-6 w-px bg-gradient-to-b from-primary/60 via-primary/20 to-transparent hidden md:block" />
 
                             <div className="flex flex-col gap-16">
-                                {resume.timeline.map((item, index) => (
+                                {resume.timeline.map((item) => (
                                     <motion.div
                                         key={item.id}
                                         variants={itemVariants}
@@ -140,36 +147,62 @@ export default function ResumeContent({ resume }: ResumeContentProps) {
                             <h2 id="education-heading" className="text-3xl font-extrabold tracking-tight">Education</h2>
                         </div>
 
-                        <div className="relative md:pl-0">
-                            <div className="flex flex-col gap-12">
-                                {resume.education.map((item, index) => (
-                                    <motion.div variants={itemVariants} key={index} className="flex flex-col md:flex-row gap-6 md:gap-12 group">
-                                        <div className="md:w-36 shrink-0 mt-1 md:text-right hidden md:block">
-                                            <span className="text-sm font-mono text-muted-foreground/80 font-medium tracking-wider group-hover:text-primary transition-colors">
+                        <div className="flex flex-col gap-8">
+                            {resume.education.map((item, index) => (
+                                <motion.div variants={itemVariants} key={index} className="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                                    <div className="md:w-36 shrink-0 mt-1 md:text-right hidden md:block">
+                                        <span className="text-sm font-mono text-muted-foreground/80 font-medium tracking-wider group-hover:text-primary transition-colors">
+                                            {item.period}
+                                        </span>
+                                    </div>
+                                    <div className="flex flex-col gap-3 card-surface glass p-8 flex-grow">
+                                        <div className="md:hidden">
+                                            <span className="text-sm font-mono text-primary font-medium tracking-wider">
                                                 {item.period}
                                             </span>
                                         </div>
-                                        <div className="flex flex-col gap-3 card-surface glass p-8 flex-grow">
-                                            <div className="md:hidden">
-                                                <span className="text-sm font-mono text-primary font-medium tracking-wider">
-                                                    {item.period}
+                                        <div>
+                                            <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-1.5">{item.degree}</h3>
+                                            <h4 className="text-sm font-semibold text-primary/80 uppercase tracking-widest mb-3">{item.institution}</h4>
+                                            {item.detail && (
+                                                <span className="inline-flex items-center gap-1.5 text-sm font-mono bg-primary/10 text-primary border border-primary/20 rounded-full px-3 py-1">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                                    {item.detail}
                                                 </span>
-                                            </div>
-                                            <div>
-                                                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-1.5">{item.degree}</h3>
-                                                <h4 className="text-sm font-semibold text-primary/80 uppercase tracking-widest">{item.institution}</h4>
-                                            </div>
+                                            )}
                                         </div>
-                                    </motion.div>
-                                ))}
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.section>
+
+                    {/* Certifications */}
+                    <motion.section variants={itemVariants} aria-labelledby="certs-heading" className="flex flex-col gap-12">
+                        <div className="flex items-center gap-4 lg:mb-4">
+                            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg>
                             </div>
+                            <h2 id="certs-heading" className="text-3xl font-extrabold tracking-tight">Certifications</h2>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {resume.certifications.map((cert, i) => (
+                                <motion.div variants={itemVariants} key={i} className="card-surface glass p-6 flex flex-col gap-2 group">
+                                    <div className="flex items-start justify-between gap-2">
+                                        <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors leading-tight">{cert.title}</h3>
+                                        <span className="text-xs font-mono text-primary bg-primary/10 border border-primary/20 rounded-full px-2 py-0.5 shrink-0">{cert.year}</span>
+                                    </div>
+                                    <p className="text-sm text-muted-foreground font-medium">{cert.issuer}</p>
+                                </motion.div>
+                            ))}
                         </div>
                     </motion.section>
 
                 </div>
 
-                {/* ── Right (4/12): Skills + Contact ───────────────── */}
-                <div className="lg:col-span-4 flex flex-col gap-16 lg:sticky lg:top-32">
+                {/* ── Right (4/12): Skills + Achievements + Contact ─── */}
+                <div className="lg:col-span-4 flex flex-col gap-12 lg:sticky lg:top-32">
 
                     {/* Skills Matrix */}
                     <motion.section variants={itemVariants} aria-labelledby="skills-heading" className="card-surface glass p-8 flex flex-col gap-8">
@@ -196,13 +229,32 @@ export default function ResumeContent({ resume }: ResumeContentProps) {
                         </div>
                     </motion.section>
 
+                    {/* Achievements & Activities */}
+                    <motion.section variants={itemVariants} aria-labelledby="achievements-heading" className="card-surface glass p-8 flex flex-col gap-6">
+                        <div className="flex items-center gap-3 border-b border-border/40 pb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <h2 id="achievements-heading" className="text-xl font-bold tracking-tight">Achievements</h2>
+                        </div>
+
+                        <ul className="flex flex-col gap-3">
+                            {resume.achievements.map((item, i) => (
+                                <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                                    <span className="text-primary mt-1 shrink-0 opacity-80">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </span>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.section>
+
                     {/* Contact Form Card */}
                     <motion.section variants={itemVariants} aria-labelledby="contact-heading" className="card-surface glass p-8 flex flex-col gap-8 relative overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         <div>
                             <h2 id="contact-heading" className="text-2xl font-bold mb-3">Get in touch</h2>
                             <p className="text-[15px] text-muted-foreground/80 leading-relaxed">
-                                Have an exciting project in mind? Let&apos;s build something exceptional together. I usually reply within 24 hours.
+                                Have an exciting project in mind? Let&apos;s collaborate. I usually reply within 24 hours.
                             </p>
                         </div>
                         <ContactForm />
