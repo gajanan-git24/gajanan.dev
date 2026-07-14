@@ -1,6 +1,7 @@
 import portfolioData from "@/data/portfolio.json";
 import Link from "next/link";
 import { ArrowRightIcon, ExternalLinkIcon, GithubIcon } from "@/components/Icons";
+import ParticleField from "@/components/ParticleField";
 
 export default function Home() {
   const { profile, projects } = portfolioData;
@@ -9,7 +10,8 @@ export default function Home() {
     <div className="flex flex-col gap-32">
 
       {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="relative flex flex-col gap-8 pt-12 md:pt-20 animate-fade-in overflow-hidden">
+      <section className="relative flex flex-col gap-8 pt-12 md:pt-20 animate-fade-in overflow-hidden" style={{ minHeight: "60vh" }}>
+        <ParticleField />
 
         {/* Ambient glow orbs */}
         <div

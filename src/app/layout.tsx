@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SplashScreen from "@/components/SplashScreen";
 import portfolioData from "@/data/portfolio.json";
 
 const inter = Inter({
@@ -18,12 +19,12 @@ export const metadata: Metadata = {
   },
   description: portfolioData.profile.bio,
   keywords: [
-    "Software Engineer",
-    "Full-Stack",
-    "Web Development",
-    "Next.js",
+    "Full-Stack Developer",
+    "Python",
     "React",
-    "TypeScript",
+    "FastAPI",
+    "Web Development",
+    "CS Student",
   ],
   authors: [{ name: portfolioData.profile.name }],
   creator: portfolioData.profile.name,
@@ -49,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col antialiased`}>
+        <SplashScreen />
         <Navbar />
         <main className="flex-grow pt-24 pb-16 px-6 md:px-12 max-w-7xl mx-auto w-full">
           {children}
