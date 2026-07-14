@@ -50,8 +50,8 @@ export default function Navbar() {
                                 key={link.path}
                                 href={link.path}
                                 className={`relative px-3 py-1.5 text-sm font-medium rounded-md transition-colors duration-200 ${pathname === link.path
-                                        ? "text-foreground bg-muted/60"
-                                        : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
+                                    ? "text-foreground bg-muted/60"
+                                    : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
                                     }`}
                             >
                                 {link.name}
@@ -66,18 +66,16 @@ export default function Navbar() {
                         <a
                             href={portfolioData.profile.github}
                             target="_blank"
-                            rel="noopener noreferrer"
                             aria-label="GitHub"
-                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200"
+                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 click-effect"
                         >
                             <GithubIcon className="w-[18px] h-[18px]" />
                         </a>
                         <a
                             href={portfolioData.profile.linkedin}
                             target="_blank"
-                            rel="noopener noreferrer"
                             aria-label="LinkedIn"
-                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200"
+                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 click-effect"
                         >
                             <LinkedInIcon className="w-[18px] h-[18px]" />
                         </a>
@@ -106,8 +104,8 @@ export default function Navbar() {
                             key={link.path}
                             href={link.path}
                             className={`text-sm font-medium px-3 py-2.5 rounded-md transition-colors duration-150 ${pathname === link.path
-                                    ? "bg-muted/70 text-foreground"
-                                    : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
+                                ? "bg-muted/70 text-foreground"
+                                : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
                                 }`}
                         >
                             {link.name}
@@ -117,9 +115,8 @@ export default function Navbar() {
                         <a
                             href={portfolioData.profile.github}
                             target="_blank"
-                            rel="noopener noreferrer"
                             aria-label="GitHub"
-                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all"
+                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all click-effect"
                         >
                             <GithubIcon className="w-4 h-4" />
                             GitHub
@@ -127,9 +124,8 @@ export default function Navbar() {
                         <a
                             href={portfolioData.profile.linkedin}
                             target="_blank"
-                            rel="noopener noreferrer"
                             aria-label="LinkedIn"
-                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all"
+                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all click-effect"
                         >
                             <LinkedInIcon className="w-4 h-4" />
                             LinkedIn

@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter max-w-4xl leading-[1.05]">
+        <h1 className="font-syne text-5xl md:text-7xl font-bold tracking-tighter max-w-4xl leading-[1.05]">
           Building digital{" "}
           <span className="gradient-text">products</span>
           {", "}
@@ -49,7 +49,7 @@ export default function Home() {
           <Link
             href="/projects"
             id="hero-cta-projects"
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all duration-150"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all duration-150 click-effect"
           >
             View My Work
             <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -57,7 +57,7 @@ export default function Home() {
           <Link
             href="/resume"
             id="hero-cta-resume"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-surface text-foreground text-sm font-semibold rounded-lg border border-border hover:border-border/80 hover:bg-muted/60 active:scale-[0.98] transition-all duration-150"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-surface text-foreground text-sm font-semibold rounded-lg border border-border hover:border-border/80 hover:bg-muted/60 active:scale-[0.98] transition-all duration-150 click-effect"
           >
             Resume &amp; Contact
           </Link>
