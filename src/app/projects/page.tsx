@@ -21,11 +21,11 @@ const REPO_OVERRIDES: Record<string, Partial<GitHubRepo>> = {
     },
     "SentinelIQ-01": {
         description: "Privileged Access Misuse & Insider Threat Detection — an AI-driven behavioral analytics platform using LSTM-based UEBA, GNN collusion mapping, and SHAP-based explainable AI.",
-        homepage: "https://sentineliq-01.vercel.app",
+        // homepage will be added once deployed
     },
     "privacy-preserving-anomaly-detection": {
         description: "A Python-based behavioral anomaly detection API designed with privacy-preserving principles. Analyzes patterns and detects anomalies without exposing sensitive user data.",
-        homepage: "https://privacy-anomaly.vercel.app",
+        // homepage will be added once deployed
     },
     "Project-Gajanan-SFS": {
         description: "An Enterprise Smart Farm Security Gateway built on Kali Linux using Python. Features real-time IoT anomaly detection, automated Nmap risk auditing, and business-focused PDF reporting.",
