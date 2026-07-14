@@ -2,7 +2,7 @@
     "profile": {
         "name": "Gajanan",
         "title": "Senior Full-Stack Engineer",
-        "bio": "I craft robust, high-performance web applications with a focus on modern user experiences and scalable architectures. With expertise in Next.js, TypeScript, and modern ecosystem tools, I deliver production-ready software designed to excel.",
+        "bio": "Senior Full-Stack Engineer specializing in scalable web architectures and modern user experiences. I excel at leading teams through complex technical transitions and delivering high-performance, production-ready software using Next.js and TypeScript.",
         "email": "gajananhampiholi@gmail.com",
         "github": "https://github.com/gajanan-git24",
         "linkedin": "https://in.linkedin.com/in/gajanan-hampiholi-053ba7294",
@@ -62,14 +62,22 @@
                 "role": "Senior Full-Stack Engineer",
                 "company": "Google Antigravity Ecosystem",
                 "period": "2024 – Present",
-                "description": "Leading the architecture and implementation of scalable, high-fidelity agentic tools. Spearheaded multiple high-impact projects including SentinelIQ and TrustStream, collaborating with cross-functional teams to ship production-ready systems."
+                "achievements": [
+                    "Leading the architecture and implementation of scalable, high-fidelity agentic tools within advanced AI contexts.",
+                    "Spearheaded multiple high-impact projects including SentinelIQ and TrustStream from concept to production.",
+                    "Collaborated with cross-functional engineers to deploy robust, production-ready systems."
+                ]
             },
             {
                 "id": "exp2",
                 "role": "Full-Stack Engineer",
                 "company": "NextGen Web Solutions",
                 "period": "2021 – 2024",
-                "description": "Architected end-to-end web architectures, optimized CI/CD pipelines, and led a team of 4 engineers transitioning monolithic setups into headless microservices using Next.js and Prisma."
+                "achievements": [
+                    "Architected modern end-to-end web architectures and optimized CI/CD pipelines for optimal deployment velocity.",
+                    "Mentored a team of 4 engineers while transitioning monolithic legacy setups into modern headless microservices.",
+                    "Delivered high-performance dynamic user experiences using Next.js, TypeScript, and Prisma."
+                ]
             }
         ],
         "skills": {
