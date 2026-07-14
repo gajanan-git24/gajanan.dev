@@ -8,18 +8,10 @@ export default function SplashScreen() {
     const [phase, setPhase] = useState<"scan" | "name" | "burst" | "exit">("scan");
 
     useEffect(() => {
-        // Skip if already seen this session
-        if (sessionStorage.getItem("splash_seen")) {
-            setVisible(false);
-            return;
-        }
         const t1 = setTimeout(() => setPhase("name"), 500);
         const t2 = setTimeout(() => setPhase("burst"), 1600);
         const t3 = setTimeout(() => setPhase("exit"), 2200);
-        const t4 = setTimeout(() => {
-            setVisible(false);
-            sessionStorage.setItem("splash_seen", "1");
-        }, 2900);
+        const t4 = setTimeout(() => setVisible(false), 2900);
         return () => [t1, t2, t3, t4].forEach(clearTimeout);
     }, []);
 
