@@ -49,7 +49,7 @@ export default function Home() {
           <Link
             href="/projects"
             id="hero-cta-projects"
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all duration-150 click-effect"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:opacity-90 transition-all duration-150 btn-blade-click"
           >
             View My Work
             <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -57,7 +57,7 @@ export default function Home() {
           <Link
             href="/resume"
             id="hero-cta-resume"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-surface text-foreground text-sm font-semibold rounded-lg border border-border hover:border-border/80 hover:bg-muted/60 active:scale-[0.98] transition-all duration-150 click-effect"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-surface text-foreground text-sm font-semibold rounded-lg border border-border hover:border-border/80 transition-all duration-150 btn-neon-click"
           >
             Resume &amp; Contact
           </Link>

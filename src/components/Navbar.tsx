@@ -67,7 +67,7 @@ export default function Navbar() {
                             href={portfolioData.profile.github}
                             target="_blank"
                             aria-label="GitHub"
-                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 click-effect"
+                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 nav-icon-click"
                         >
                             <GithubIcon className="w-[18px] h-[18px]" />
                         </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
                             href={portfolioData.profile.linkedin}
                             target="_blank"
                             aria-label="LinkedIn"
-                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 click-effect"
+                            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/60 transition-all duration-200 nav-icon-click"
                         >
                             <LinkedInIcon className="w-[18px] h-[18px]" />
                         </a>
@@ -116,7 +116,7 @@ export default function Navbar() {
                             href={portfolioData.profile.github}
                             target="_blank"
                             aria-label="GitHub"
-                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all click-effect"
+                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all nav-icon-click"
                         >
                             <GithubIcon className="w-4 h-4" />
                             GitHub
@@ -125,7 +125,7 @@ export default function Navbar() {
                             href={portfolioData.profile.linkedin}
                             target="_blank"
                             aria-label="LinkedIn"
-                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all click-effect"
+                            className="flex items-center gap-2 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-all nav-icon-click"
                         >
                             <LinkedInIcon className="w-4 h-4" />
                             LinkedIn
