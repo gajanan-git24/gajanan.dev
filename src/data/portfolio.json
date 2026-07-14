@@ -11,32 +11,60 @@
     "projects": [
         {
             "id": "1",
-            "title": "AI-Powered Face Recognition Security",
-            "description": "An intelligent security system leveraging OpenCV facial recognition for automated real-time Telegram security alerts, improving overall security efficiency by 20%.",
+            "title": "Real-Time Face ID with Greeting & Voice Alert",
+            "description": "A real-time face identification system featuring spoken greetings and voice alerts on recognition. Uses OpenCV for facial detection and pyttsx3 for text-to-speech output.",
             "techStack": [
                 "Python",
                 "OpenCV",
-                "Telegram API",
-                "FastAPI"
+                "pyttsx3",
+                "face_recognition"
             ],
-            "liveLink": "",
-            "githubLink": "https://github.com/gajanan-git24",
+            "liveLink": "https://real-time-face-id-with-greeting-voi.vercel.app",
+            "githubLink": "https://github.com/gajanan-git24/Real-Time-Face-ID-with-Greeting-Voice-Alert-Output",
             "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         },
         {
             "id": "2",
-            "title": "SentinelIQ Insider Threat Platform",
-            "description": "An AI-driven behavioral analytics platform detecting privileged access misuse and insider threats, integrating advanced ML techniques and security frameworks.",
+            "title": "Smart Farm Security Gateway (SFS)",
+            "description": "An enterprise-grade Smart Farm Security Gateway built on Kali Linux using Python. Features real-time IoT anomaly detection, automated Nmap risk auditing, and business-focused PDF reporting.",
             "techStack": [
-                "Next.js",
-                "TypeScript",
                 "Python",
-                "TensorFlow",
-                "FastAPI"
+                "Kali Linux",
+                "Nmap",
+                "HTML",
+                "IoT"
             ],
             "liveLink": "",
-            "githubLink": "https://github.com/gajanan-git24",
+            "githubLink": "https://github.com/gajanan-git24/Project-Gajanan-SFS",
             "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "3",
+            "title": "Mental Health Support App",
+            "description": "A compassionate web application providing mental health resources, self-assessment tools, and support content to help users manage their wellbeing.",
+            "techStack": [
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS"
+            ],
+            "liveLink": "https://v0-mental-health-beryl.vercel.app",
+            "githubLink": "https://github.com/gajanan-git24/Mental-Health",
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "id": "4",
+            "title": "Privacy-Preserving Anomaly Detection",
+            "description": "A Python-based behavioral anomaly detection API designed with privacy-preserving principles. Analyzes patterns and detects anomalies without exposing sensitive user data.",
+            "techStack": [
+                "Python",
+                "FastAPI",
+                "Machine Learning",
+                "Privacy AI"
+            ],
+            "liveLink": "",
+            "githubLink": "https://github.com/gajanan-git24/privacy-preserving-anomaly-detection",
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         }
     ],
     "resume": {

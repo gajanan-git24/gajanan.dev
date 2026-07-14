@@ -64,9 +64,9 @@ export default function Home() {
         {/* Stats row */}
         <div className="flex flex-wrap gap-8 pt-6 mt-2 border-t border-border/60">
           {[
-            { label: "Years of Experience", value: "5+" },
-            { label: "Projects Shipped", value: "20+" },
-            { label: "Tech Stack Size", value: "15+" },
+            { label: "GitHub Repositories", value: "10+" },
+            { label: "Projects Shipped", value: "5+" },
+            { label: "Certifications", value: "2" },
           ].map(({ label, value }) => (
             <div key={label} className="flex flex-col gap-0.5">
               <span className="text-2xl font-bold text-foreground">{value}</span>
@@ -171,9 +171,8 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2 max-w-3xl">
           {[
-            "Next.js", "React", "TypeScript", "Node.js", "Python",
-            "FastAPI", "Tailwind CSS", "PostgreSQL", "Docker", "AWS",
-            "GraphQL", "Prisma", "Redis", "Framer Motion", "GitHub Actions",
+            "Python", "FastAPI", "React", "JavaScript", "HTML", "CSS",
+            "OpenCV", "MySQL", "Git", "Docker", "C", "C++",
           ].map((skill) => (
             <span key={skill} className="tag-pill cursor-default">{skill}</span>
           ))}
