@@ -21,18 +21,23 @@ export default function ContactForm() {
             name: formData.get("name"),
             email: formData.get("email"),
             message: formData.get("message"),
+            _subject: `New Portfolio Contact from ${formData.get("name")}`,
+            _captcha: "false" // Disable captcha for smooth API submission
         };
 
         try {
-            const response = await fetch("/api/contact", {
+            const response = await fetch("https://formsubmit.co/ajax/gajananhampiholi24@gmail.com", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
                 body: JSON.stringify(data),
             });
 
             if (!response.ok) {
                 const json = await response.json().catch(() => ({}));
-                throw new Error(json.error ?? "Failed to send message.");
+                throw new Error(json.message ?? "Failed to send message.");
             }
 
             setStatus("success");
